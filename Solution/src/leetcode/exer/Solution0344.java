@@ -8,9 +8,8 @@ import org.junit.Test;
  */
 public class Solution0344 {
     public void reverseString(char[] s) {
-        if(s.length==0){
+        if(s.length==0)
             return;
-        }
         char temp;
         for (int i = 0,j=s.length-1; i <j; i++,j--) {
             temp=s[i];
@@ -21,7 +20,6 @@ public class Solution0344 {
     @Test
     public void test(){
         char[] s={'h','e','l','l','o'};
-
         reverseString(s);
         for (char c : s) {
             System.out.println(c);
