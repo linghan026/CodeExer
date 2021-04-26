@@ -24,5 +24,6 @@ public class Solution0001TwoSum
     @Test
 	public void test(){
 		System.out.println("git");
+		System.out.println("git");
 	}
 }
