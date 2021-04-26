@@ -1,5 +1,7 @@
 package leetcode.exer;
 
+import org.junit.Test;
+
 public class Solution0001TwoSum
 {
     public int[] twoSum(int[] nums, int target) 
@@ -19,4 +21,8 @@ public class Solution0001TwoSum
     	}
         return result;
     }
+    @Test
+	public void test(){
+		System.out.println("git");
+	}
 }
