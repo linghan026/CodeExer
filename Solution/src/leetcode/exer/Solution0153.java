@@ -6,13 +6,23 @@ package leetcode.exer;
  */
 public class Solution0153 {
     public int findMin(int[] nums) {
-        int left=0;
-        int right=nums.length-1;
-        int mid=(left+right)/2;
-        while (){
-            if(nums[mid]>nums[mid+1])
-                return nums[mid+1];
-            else
+//        //法一：暴力
+//        for (int i = 1; i < nums.length; i++) {
+//            if (nums[i] < nums[i - 1])
+//                return nums[i];
+//        }
+//        return nums[0];
+        //法二：二分法（官方）
+        int low = 0;
+        int high = nums.length - 1;
+        while (low < high) {
+            int pivot = (high + low) / 2;
+            if (nums[pivot] < nums[high]) {
+                high = pivot;
+            } else {
+                low = pivot + 1;
+            }
         }
+        return nums[low];
     }
 }
